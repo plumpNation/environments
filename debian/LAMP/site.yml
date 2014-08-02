@@ -1,0 +1,13 @@
+---
+- name: setup server
+  hosts: vagrant
+  user: vagrant
+
+  vars:
+    node_version: "0.10.12"
+
+  sudo: yes
+  roles:
+    - core
+    - nginx
+    - nodejs
