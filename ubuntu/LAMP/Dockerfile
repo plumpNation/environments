@@ -1,8 +1,8 @@
 # DOCKER-VERSION 0.3.4
 
-MAINTAINER Gavin King <plumpnation@gmail.com>
-
 FROM ubuntu:precise
+
+MAINTAINER Gavin King <plumpnation@gmail.com>
 
 RUN apt-get update
 

@@ -1,3 +1,0 @@
----
-- name: run dockerfile
-  service: name=docker state=run

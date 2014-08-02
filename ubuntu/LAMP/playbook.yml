@@ -4,6 +4,6 @@
   remote_user: vagrant
 
   sudo: yes
-  tasks:
-    - name: test connection
-      ping:
+  roles:
+    - core
+    - dockerimage
