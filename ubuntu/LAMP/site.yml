@@ -1,9 +1,0 @@
----
-- name: setup server
-  hosts: vagrant
-  user: vagrant
-
-  sudo: yes
-  roles:
-    - core
-    - docker

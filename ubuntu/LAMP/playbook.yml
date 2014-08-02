@@ -1,0 +1,9 @@
+---
+- name: setup server
+  hosts: vagrant
+  remote_user: vagrant
+
+  sudo: yes
+  tasks:
+    - name: test connection
+      ping:
