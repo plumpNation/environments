@@ -1,8 +1,3 @@
 ---
-- name: Copy docker file
-  template: src=Dockerfile
-            dest=/home/vagrant/Dockerfile
-            mode=0640 owner=vagrant
-
-- name: Build docker image
-  docker_image: path="/home/vagrant/" name="my/lampstack" state=present
+- name: Pull docker image
+  script: plumpnation/apache2

@@ -6,4 +6,3 @@
   sudo: yes
   roles:
     - core
-    - dockerimage

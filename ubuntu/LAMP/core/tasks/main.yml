@@ -1,12 +1,6 @@
 ---
+- name: Add docker ppa repository
+  apt_repository: repo=ppa:docker-maint/testing update_cache=yes
+
 - name: install docker
-  apt: name=docker.io state=present
-
-- name: install easy_install
-  apt: name=python-setuptools state=present
-
-- name: easy_install pip
-  easy_install: name=pip
-
-- name: install docker-py
-  pip: name=docker-py
+  apt: name=docker.io state=latest
